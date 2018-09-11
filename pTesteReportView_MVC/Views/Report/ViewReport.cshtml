@@ -1,0 +1,24 @@
+﻿@using ReportViewerForMvc;
+@{
+    Layout = null;
+}
+
+<style>
+    .report {
+        width: 100%;
+        text-align: center;
+    }
+
+    .report > iframe {
+        width: 800px;
+        margin: 0 auto;
+        border: none;
+        text-align: center;
+        box-shadow: 5px 5px 3px #aaaaaa;
+        height:800px;
+    }
+</style>
+
+<div class="report">
+    @Html.ReportViewer(ViewBag.ReportViewer as Microsoft.Reporting.WebForms.ReportViewer)
+</div>
